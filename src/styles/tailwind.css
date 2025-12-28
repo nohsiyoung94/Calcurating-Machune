@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@utility calc-btn {
+  @apply border-2 border-[#333] cursor-pointer text-lg hover:shadow-[1px_1px_2px_#333];
+}
+
+@layer components {
+  .calc-input {
+    @apply bg-white col-span-4 text-right px-2.5 calc-btn;
+  }
+  .calc-claer {
+    @apply bg-[red] col-span-3 calc-btn;
+  }
+  .calc-operator {
+    @apply bg-[orange] calc-btn;
+  }
+  .calc-number {
+    @apply bg-white calc-btn;
+  }
+  .calc-dot {
+    @apply bg-[green] calc-btn;
+  }
+  .calc-result {
+    @apply bg-[orange] col-span-2 calc-btn;
+  }
+}
